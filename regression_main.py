@@ -59,8 +59,8 @@ val_generator = TimeseriesGenerator(
     batch_size=32
 )
 
-PREDICT = False
-# PREDICT = True
+# PREDICT = False
+PREDICT = True
 LOG_DIR = './regression_log/'
 DROPOUT = 0.3
 ###下面进入模型进行预测#####
@@ -117,8 +117,8 @@ for depth in [15,20,10]:
 
     else:
         from keras.models import load_model
-        model = load_model(model_name)
-        # model = load_model("Kerasmodel.h5")
+        # model = load_model(model_name)
+        model = load_model("Kerasmodel.h5")
         y_pred = model.predict([signal_input,catalog_input,number_input])
         print('y_pred的数据是:\n',y_pred)
         y_pred=np.squeeze(y_pred)
