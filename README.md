@@ -1,4 +1,6 @@
+本次模型没有上传NASA的数据，需要读者自己去下载NASA数据集；
 # transfer_learning_NASA
+
 Testing transfer learning among different milling condition
 
 # HomePage
